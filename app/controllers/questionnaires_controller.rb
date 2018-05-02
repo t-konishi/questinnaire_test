@@ -13,6 +13,12 @@ class QuestionnairesController < ApplicationController
   end
 
   def create
+    @questionnaire = Questionnaire.new(params[:questionnaire])
+    if @questionnaire.save
+      render "new"
+    else
+      render "new"
+    end
   end
 
   def update
