@@ -1,5 +1,6 @@
 class QuestionnairesController < ApplicationController
   def index
+    @questionnaires = Questionnaire.all
   end
 
   def show
@@ -15,7 +16,7 @@ class QuestionnairesController < ApplicationController
   def create
     @questionnaire = Questionnaire.new(params[:questionnaire])
     if @questionnaire.save
-      render "new"
+      redirect_to questionnaires_path
     else
       render "new"
     end
