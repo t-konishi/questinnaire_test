@@ -16,7 +16,8 @@ class QuestionnairesController < ApplicationController
   def create
     @questionnaire = Questionnaire.new(params[:questionnaire])
     if @questionnaire.save
-      redirect_to questionnaires_path
+      # redirect_to questionnaires_path
+      render "thanks"
     else
       render "new"
     end
