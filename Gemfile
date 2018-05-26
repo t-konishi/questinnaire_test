@@ -70,3 +70,4 @@ gem 'jquery-rails'
 
 # Added by T.Konishi 2018/5/26
 gem 'devise'
+gem 'annotate'
