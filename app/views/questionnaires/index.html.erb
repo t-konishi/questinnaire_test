@@ -1,4 +1,9 @@
 <%  @page_title = "回答一覧" %>
+
+<div class="logout-link">
+  <%= link_to("ログアウト",destroy_user_session_path, method: :delete) %>
+</div>
+
 <h1><%=  @page_title %></h1>
 
 <% if @questionnaires.present? %>
