@@ -67,3 +67,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap-sass'
 gem 'honoka-rails'
 gem 'jquery-rails'
+
+# Added by T.Konishi 2018/5/26
+gem 'devise'
